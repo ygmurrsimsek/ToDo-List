@@ -9,7 +9,7 @@ function config() {
       
       <Routes>
         <Route path="/" element={<Home/>}></Route>
-        <Route path="/signup" element={<SignUp/>}></Route>
+        <Route path="/signin" element={<SignUp/>}></Route>
         <Route path="/kayit" element={<Kayit/>}></Route>
 
       </Routes>
