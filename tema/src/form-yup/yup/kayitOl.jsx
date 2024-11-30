@@ -6,5 +6,4 @@ export const kayitOl =yup.object().shape({
     email:yup.string().required().email("Geçerli bir e-posta adresi giriniz"),
     password:yup.string().required("Şifre alanı zorunludur.").min(8,"Şifre en az 8 karakter olmalıdır").max(50,"Şifre en fazla 50 karakter olabilir"),
     confirmPassword: yup.string().required("Şifre onayı alanı zorunludur.").oneOf([yup.ref("password"),null,"Şifreler eşleşmiyor"]),
-    terms:yup.boolean().required("Şartları kabul etmelisiniz"),
 });

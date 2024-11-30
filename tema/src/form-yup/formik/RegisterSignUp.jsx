@@ -11,7 +11,7 @@ function RegisterSignUp() {
   });
 
   return (
-    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6 items-center justify-center" style={{ height: '500px' }}>
+    <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-24 lg:px-6 items-center justify-center w-full" style={{ height: '500px' }}>
       <div className="min-h-screen flex items-center justify-center px-4 mt-4" style={{ height: '400px' }}>
         <form
           onSubmit={handleSubmit}

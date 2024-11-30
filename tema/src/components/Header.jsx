@@ -4,20 +4,20 @@ import { useNavigate } from 'react-router-dom';
 function Header() {
     const navigate = useNavigate();
   return (
-    <div>
-      <header className="fixed top-0 w-full  h-16  z-10">
+    <div className='fixed'>
+      <header className="fixed top-0 w-full  h-16  z-50">
         <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900">
             <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
                 <a href="#" className="flex items-center">
                     <img src={logo} className="h-6 mr-3 sm:h-9" alt="Landwind Logo" />
-                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-gray-400">ToDo List</span>
+                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-gray-400" onClick={()=>navigate('/')}>ToDo List</span>
                 </a>
                 <div className="flex items-center lg:order-2">
                     <div className="hidden mt-2 mr-4 sm:inline-block">
-                        <a className="github-button" data-size="large" data-icon="octicon-star" data-show-count="true" aria-label="Star themesberg/landwind on GitHub">Sign Up</a>
+                        <a className="github-button" data-size="large" data-icon="octicon-star" data-show-count="true" aria-label="Star themesberg/landwind on GitHub" onClick={()=>navigate('/kayit')} style={{cursor:'pointer'}}>Sign Up</a>
                     </div>
 
-                    <a  className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800" onClick={()=>navigate("/signup")}>Sign In</a>
+                    <a  className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800" onClick={()=>navigate("/signup")} style={{cursor:'pointer'}}>Sign In</a>
                     <button data-collapse-toggle="mobile-menu-2" type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span className="sr-only">Open main menu</span>
                         <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
